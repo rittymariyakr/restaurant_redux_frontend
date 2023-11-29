@@ -1,0 +1,27 @@
+1) install react bootstrap 
+    - npm i react-bootstrap bootstrap
+
+2) Bootswatch thme  and import at index.js 
+
+3) install react router dom
+    - npm i react-router-dom
+    plce <App/> inside <BrowserRouter> tag in index.js
+
+
+
+for Redux
+---------
+
+npm install @reduxjs/toolkit
+
+npm install react-redux
+
+
+thunk
+------
+
+- thunk accepts an action type string and a function that returns a promise, and generate a thunk that dispatches pending/fullfilled/rejected action types based on that promise.
+- thunk is not a part of slice. but its a method in toolkit
+
+- builder hold response or values from thunk
+
