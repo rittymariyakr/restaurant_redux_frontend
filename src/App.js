@@ -13,6 +13,7 @@ function App() {
      
       <Routes>
         <Route path='/' element={<Home/>}/>
+        {/* here id is a parameter. so give full colon infront of id  for recognizing id as parameter */}
         <Route path='/restaurant_view/:id' element={<RestView/>}/>
       </Routes>
       

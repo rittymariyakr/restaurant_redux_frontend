@@ -3,9 +3,10 @@ import { Col, Row } from 'react-bootstrap';
 import Card from 'react-bootstrap/Card';
 import { Link } from 'react-router-dom';
 
-function RestCard({restaurant}) {
+function RestCard({restaurant}) { //from home
   return (
    <>
+   {/* passing id in url */}
    <Link to={`/restaurant_view/${restaurant.id}`} style={{textDecoration:'none'}}>
     
    <Card style={{ width: '85%' }}>

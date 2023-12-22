@@ -11,9 +11,11 @@ import { fetchrestaurant } from '../redux/restaurantSlice';
 function RestView() {
     const [show, setShow] = useState(false);
 
+    //useparams hook is used for accessing parameter //here parameter is id
     const {id} = useParams()
     console.log(id);
 
+    //accessing satate
     const allrestaurant = useSelector((state)=> state.restaurantSlice.allrestaurant)
     console.log(allrestaurant);
     

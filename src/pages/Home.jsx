@@ -11,11 +11,13 @@ function Home() {
 
   const dispatch = useDispatch()
 
+//to load all data when home page is loading 
     useEffect(()=>{
       //to update the value in state by using thunk api call
       dispatch(fetchrestaurant())
         
     },[])
+
   return (
 
     
@@ -28,7 +30,7 @@ function Home() {
     </Col>))
           
         :
-        <p>Nothing to display</p>}
+        <p className='text-danger fs-4'>Nothing to display</p>}
         
     </Row>
     </>
